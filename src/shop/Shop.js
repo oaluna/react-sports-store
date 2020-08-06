@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { CategoryNavigation } from './CategoryNavigation'
 import { ProductList } from './ProductList'
 import { CartSummary } from './CartSummary'
+import { ProductPageConnector } from './ProductPageConnector'
+import { PaginationControls } from '../PaginationControls'
+
+const ProductPages = ProductPageConnector(PaginationControls)
 
 export class Shop extends Component {
   handleAddToCart = (...args) => {
@@ -16,7 +20,7 @@ export class Shop extends Component {
           <div
             className='col bg-dark text-white'
             style={{
-              background: 'linear-gradient(180deg, #08203E 0%, #557C93 100%)'
+              background: 'linear-gradient(180deg, #08023e 0%, #557c93 100%)'
             }}>
             <div className='navbar-brand'>SPORTS STORE</div>
             <CartSummary {...this.props} />
@@ -30,6 +34,7 @@ export class Shop extends Component {
             />
           </div>
           <div className='col-9 p-2'>
+            <ProductPages />
             <ProductList
               products={this.props.products}
               addToCart={this.handleAddToCart}

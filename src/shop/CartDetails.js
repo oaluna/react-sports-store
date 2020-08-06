@@ -10,9 +10,9 @@ export class CartDetails extends Component {
     return (
       <React.Fragment>
         <div
-          className='col bg-dark text-white'
+          className='col text-white'
           style={{
-            background: 'linear-gradient(180deg, #08203E 0%, #557C93 100%)'
+            background: 'linear-gradient(180deg, #08023e 0%, #557c93 100%)'
           }}>
           <div className='navbar-brand'>SPORTS STORE</div>
           <CartSummary {...this.props} />
@@ -38,10 +38,20 @@ export class CartDetails extends Component {
             </tbody>
           </table>
           <div className='text-center'>
-            <Link className='btn btn-primary m-1' to='/shop'>
+            <Link
+              className='btn btn-primary m-1'
+              style={{
+                background: 'radial-gradient(circle, #08023e 0%, #557c93 100%)'
+              }}
+              to='/shop'>
               Continue Shopping
             </Link>
-            <Link className={this.getLinkClasses()} to='/shop/checkout'>
+            <Link
+              className={this.getLinkClasses()}
+              style={{
+                background: 'radial-gradient(circle, #557c93 #08023e100%)'
+              }}
+              to='/shop/checkout'>
               Checkout
             </Link>
           </div>
