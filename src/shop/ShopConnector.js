@@ -7,6 +7,8 @@ import { Shop } from '../shop/Shop'
 import * as CartActions from '../data/CartActionCreators'
 import { CartDetails } from '../shop/CartDetails'
 import { DataGetter } from '../data/DataGetter'
+import { Checkout } from '../shop/Checkout'
+import { Thanks } from '../shop/Thanks'
 
 const mapDispatchToProps = { ...ShopActions, ...CartActions }
 
@@ -26,6 +28,10 @@ export const ShopConnector = connect(
           return wrap(DataGetter, Shop)
         case 'cart':
           return wrap(CartDetails)
+        case 'checkout':
+          return wrap(Checkout)
+        case 'thanks':
+          return wrap(Thanks)
         default:
           return <Redirect to='/shop/products/all/1' />
       }
