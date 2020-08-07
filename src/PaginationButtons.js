@@ -26,9 +26,9 @@ export class PaginationButtons extends Component {
         <button
           onClick={() => navigate(current - 1)}
           disabled={current === 1}
-          className='btn text-white mx-1'
+          className='btn text-white btn-secondary mx-1'
           style={{
-            background: 'radial-gradient(circle, #08023e 0%, #557c93 100%)'
+            background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
           }}>
           Previous
         </button>
@@ -38,7 +38,7 @@ export class PaginationButtons extends Component {
               className='btn text-white mx-1'
               onClick={() => navigate(1)}
               style={{
-                background: 'radial-gradient(circle, #08023e 0%, #557c93 100%)'
+                background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
               }}>
               1
             </button>
@@ -47,10 +47,10 @@ export class PaginationButtons extends Component {
         )}
         {this.getPageNumbers().map((num) => (
           <button
-            className={`btn mx-1 text-white`}
+            className={`btn mx-1  text-white`}
             onClick={() => navigate(num)}
             style={{
-              background: 'radial-gradient(circle, #08023e 0%, #557C93 100%)'
+              background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
             }}
             key={num}>
             {num}
@@ -63,7 +63,7 @@ export class PaginationButtons extends Component {
               className='btn text-white mx-1'
               onClick={() => navigate(pageCount)}
               style={{
-                background: 'radial-gradient(circle, #08023e 0%, #557C93 100%)'
+                background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
               }}>
               {pageCount}
             </button>
@@ -74,7 +74,7 @@ export class PaginationButtons extends Component {
           disabled={current === pageCount}
           className='btn btn-secondary text-white mx-1'
           style={{
-            background: 'radial-gradient(circle, #08023e 0%, #557C93 100%)'
+            background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
           }}>
           Next
         </button>

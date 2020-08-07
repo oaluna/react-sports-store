@@ -9,11 +9,7 @@ export class ProductList extends Component {
       <div className='card m-1 p-1 bg-light' key={p.id}>
         <h4>
           {p.name}
-          <span
-            className='badge badge-pill float-right'
-            style={{
-              background: 'radial-gradient(circle, #fffffa 0%, #fff000 100%)'
-            }}>
+          <span className='badge badge-pill badge-primary float-right'>
             ${p.price.toFixed(2)}
           </span>
         </h4>
@@ -22,7 +18,7 @@ export class ProductList extends Component {
           <button
             className='btn btn-sm text-white float-right'
             style={{
-              background: 'radial-gradient(circle, #557c93 0%,  #08023e 100%)'
+              background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
             }}
             onClick={() => this.props.addToCart(p)}>
             Add To Cart

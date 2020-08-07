@@ -12,7 +12,7 @@ export class CartDetails extends Component {
         <div
           className='col text-white'
           style={{
-            background: 'linear-gradient(180deg, #08023e 0%, #557c93 100%)'
+            background: 'linear-gradient(180deg, #08023e 0%, #222aaa 100%)'
           }}>
           <div className='navbar-brand'>SPORTS STORE</div>
           <CartSummary {...this.props} />
@@ -41,7 +41,7 @@ export class CartDetails extends Component {
             <Link
               className='btn btn-primary m-1'
               style={{
-                background: 'radial-gradient(circle, #08023e 0%, #557c93 100%)'
+                background: 'radial-gradient(circle, #08023e 0%, ##222aaa 100%)'
               }}
               to='/shop'>
               Continue Shopping
@@ -49,7 +49,7 @@ export class CartDetails extends Component {
             <Link
               className={this.getLinkClasses()}
               style={{
-                background: 'radial-gradient(circle, #557c93 #08023e100%)'
+                background: 'radial-gradient(circle, ##222aaa #08023e 100%)'
               }}
               to='/shop/checkout'>
               Checkout

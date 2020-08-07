@@ -20,7 +20,7 @@ export class Shop extends Component {
           <div
             className='col bg-dark text-white'
             style={{
-              background: 'linear-gradient(180deg, #08023e 0%, #557c93 100%)'
+              background: 'linear-gradient(180deg, #08023e 0%, #222aaa 100%)'
             }}>
             <div className='navbar-brand'>SPORTS STORE</div>
             <CartSummary {...this.props} />

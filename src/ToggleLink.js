@@ -21,7 +21,7 @@ export class ToggleLink extends Component {
               to={this.props.to}
               className={combinedClasses}
               style={{
-                background: 'radial-gradient(circle, #08203E 0%, #557C93 100%)'
+                background: 'radial-gradient(circle, #08203E 0%, #222aaa 100%)'
               }}>
               {this.props.children}
             </Link>
