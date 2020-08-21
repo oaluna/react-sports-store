@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { ThemeProvider } from '@material-ui/styles'
+import { theme } from './theme'
 
 export class PaginationButtons extends Component {
   getPageNumbers = () => {
@@ -23,61 +25,63 @@ export class PaginationButtons extends Component {
     const navigate = this.props.navigate
     return (
       <React.Fragment>
-        <button
-          onClick={() => navigate(current - 1)}
-          disabled={current === 1}
-          className='btn text-white btn-secondary mx-1'
-          style={{
-            background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
-          }}>
-          Previous
-        </button>
-        {current > 4 && (
-          <React.Fragment>
-            <button
-              className='btn text-white mx-1'
-              onClick={() => navigate(1)}
-              style={{
-                background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
-              }}>
-              1
-            </button>
-            <span className='h4'>...</span>
-          </React.Fragment>
-        )}
-        {this.getPageNumbers().map((num) => (
+        <ThemeProvider theme={theme}>
           <button
-            className={`btn mx-1  text-white`}
-            onClick={() => navigate(num)}
+            onClick={() => navigate(current - 1)}
+            disabled={current === 1}
+            className='btn text-white btn-secondary mx-1'
             style={{
-              background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
-            }}
-            key={num}>
-            {num}
+              background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+            }}>
+            Previous
           </button>
-        ))}
-        {current <= pageCount - 4 && (
-          <React.Fragment>
-            <span className='h4'>...</span>
+          {current > 4 && (
+            <React.Fragment>
+              <button
+                className='btn text-white mx-1'
+                onClick={() => navigate(1)}
+                style={{
+                  background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+                }}>
+                1
+              </button>
+              <span className='h4'>...</span>
+            </React.Fragment>
+          )}
+          {this.getPageNumbers().map((num) => (
             <button
-              className='btn text-white mx-1'
-              onClick={() => navigate(pageCount)}
+              className={`btn mx-1  text-white`}
+              onClick={() => navigate(num)}
               style={{
-                background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
-              }}>
-              {pageCount}
+                background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+              }}
+              key={num}>
+              {num}
             </button>
-          </React.Fragment>
-        )}
-        <button
-          onClick={() => navigate(current + 1)}
-          disabled={current === pageCount}
-          className='btn btn-secondary text-white mx-1'
-          style={{
-            background: 'radial-gradient(circle, #222aaa 0%,  #08023e 100%)'
-          }}>
-          Next
-        </button>
+          ))}
+          {current <= pageCount - 4 && (
+            <React.Fragment>
+              <span className='h4'>...</span>
+              <button
+                className='btn text-white mx-1'
+                onClick={() => navigate(pageCount)}
+                style={{
+                  background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+                }}>
+                {pageCount}
+              </button>
+            </React.Fragment>
+          )}
+          <button
+            onClick={() => navigate(current + 1)}
+            disabled={current === pageCount}
+            className='btn btn-secondary text-white mx-1'
+            style={{
+              background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+            }}>
+            Next
+          </button>
+        </ThemeProvider>
       </React.Fragment>
     )
   }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { ValidatedForm } from '../forms/ValidatedForm'
+import { ThemeProvider } from '@material-ui/styles'
+import { theme } from '../theme'
 
 export class Checkout extends Component {
   constructor(props) {
@@ -34,29 +36,31 @@ export class Checkout extends Component {
 
   render() {
     return (
-      <div className='container-fluid'>
-        <div className='row'>
-          <div
-            className='col bg-dark text-white'
-            style={{
-              background: 'linear-gradient(180deg, #08023e 0%, #222aaa 100%)'
-            }}>
-            <div className='navbar-brand'>SPORTS STORE</div>
+      <ThemeProvider theme={theme}>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div
+              className='col bg-dark text-white'
+              style={{
+                background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+              }}>
+              <div className='navbar-brand'>SPORTS STORE</div>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col m-2'>
+              <ValidatedForm
+                formModel={this.formModel}
+                defaultAttrs={this.defaultAttrs}
+                submitCallback={this.handleSubmit}
+                cancelCallback={this.handleCancel}
+                submitText='Place Order'
+                cancelText='Return to Cart'
+              />
+            </div>
           </div>
         </div>
-        <div className='row'>
-          <div className='col m-2'>
-            <ValidatedForm
-              formModel={this.formModel}
-              defaultAttrs={this.defaultAttrs}
-              submitCallback={this.handleSubmit}
-              cancelCallback={this.handleCancel}
-              submitText='Place Order'
-              cancelText='Return to Cart'
-            />
-          </div>
-        </div>
-      </div>
+      </ThemeProvider>
     )
   }
 }

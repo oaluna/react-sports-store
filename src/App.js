@@ -8,17 +8,21 @@ import {
   Redirect
 } from 'react-router-dom'
 import { ShopConnector } from './shop/ShopConnector'
+import { ThemeProvider } from '@material-ui/styles'
+import { theme } from './theme'
 
 export default class App extends Component {
   render() {
     return (
       <Provider store={SportsStoreDataStore}>
-        <Router>
-          <Switch>
-            <Route path='/shop' component={ShopConnector} />
-            <Redirect to='/shop' />
-          </Switch>
-        </Router>
+        <ThemeProvider theme={theme}>
+          <Router>
+            <Switch>
+              <Route path='/shop' component={ShopConnector} />
+              <Redirect to='/shop' />
+            </Switch>
+          </Router>
+        </ThemeProvider>
       </Provider>
     )
   }
