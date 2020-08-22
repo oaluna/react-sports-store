@@ -44,11 +44,23 @@ export class Checkout extends Component {
               style={{
                 background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
               }}>
-              <div className='navbar-brand'>SPORTS STORE</div>
+              <div
+                className='navbar-brand'
+                style={{ fontFamily: 'Bungee Inline' }}>
+                <h1
+                  className='font-weight-bold'
+                  style={{
+                    color: `${theme.palette.secondary.main}`,
+                    textShadow: '1px 1px 4px yellow',
+                    fontFamily: 'Bungee Inline'
+                  }}>
+                  SPORTS STORE
+                </h1>
+              </div>
             </div>
           </div>
           <div className='row'>
-            <div className='col m-2'>
+            <div className='col m-2 text-white'>
               <ValidatedForm
                 formModel={this.formModel}
                 defaultAttrs={this.defaultAttrs}

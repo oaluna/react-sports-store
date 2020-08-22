@@ -17,12 +17,22 @@ export class CartDetails extends Component {
             style={{
               background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
             }}>
-            <div className='navbar-brand'>SPORTS STORE</div>
+            <div className='navbar-brand'>
+              <h1
+                className='font-weight-bold'
+                style={{
+                  color: `${theme.palette.secondary.main}`,
+                  textShadow: '1px 1px 4px yellow',
+                  fontFamily: 'Bungee Inline'
+                }}>
+                SPORTS STORE
+              </h1>
+            </div>
             <CartSummary {...this.props} />
           </div>
           <div className='m-3'>
-            <h2 className='text-center'>Your Cart</h2>
-            <table className='table table-bordered table-striped'>
+            <h2 className='text-white text-center'>Your Cart</h2>
+            <table className='table table-bordered table-striped text-white'>
               <thead>
                 <tr>
                   <th>Quantity</th>

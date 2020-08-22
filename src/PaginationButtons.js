@@ -31,7 +31,7 @@ export class PaginationButtons extends Component {
             disabled={current === 1}
             className='btn text-white btn-secondary mx-1'
             style={{
-              background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+              background: `radial-gradient(circle, ${theme.palette.primary.light} 0%, ${theme.palette.primary.dark} 100%)`
             }}>
             Previous
           </button>
@@ -41,7 +41,7 @@ export class PaginationButtons extends Component {
                 className='btn text-white mx-1'
                 onClick={() => navigate(1)}
                 style={{
-                  background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+                  background: `radial-gradient(circle, ${theme.palette.primary.light} 0%, ${theme.palette.primary.dark} 100%)`
                 }}>
                 1
               </button>
@@ -53,7 +53,7 @@ export class PaginationButtons extends Component {
               className={`btn mx-1  text-white`}
               onClick={() => navigate(num)}
               style={{
-                background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+                background: `radial-gradient(circle, ${theme.palette.primary.light} 0%, ${theme.palette.primary.dark} 100%)`
               }}
               key={num}>
               {num}
@@ -66,7 +66,7 @@ export class PaginationButtons extends Component {
                 className='btn text-white mx-1'
                 onClick={() => navigate(pageCount)}
                 style={{
-                  background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+                  background: `radial-gradient(circle, ${theme.palette.primary.light} 0%, ${theme.palette.primary.dark} 100%)`
                 }}>
                 {pageCount}
               </button>
@@ -77,7 +77,7 @@ export class PaginationButtons extends Component {
             disabled={current === pageCount}
             className='btn btn-secondary text-white mx-1'
             style={{
-              background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
+              background: `radial-gradient(circle, ${theme.palette.primary.light} 0%, ${theme.palette.primary.dark} 100%)`
             }}>
             Next
           </button>

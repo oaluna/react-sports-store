@@ -28,9 +28,13 @@ export class Shop extends Component {
               <div className='navbar-brand'>
                 <h1
                   className='font-weight-bold'
-                  style={{ color: `${theme.palette.primary.contrastText}` }}>
+                  style={{
+                    color: `${theme.palette.secondary.main}`,
+                    textShadow: '1px 1px 4px yellow',
+                    fontFamily: 'Bungee Inline'
+                  }}>
                   SPORTS STORE
-                </h1>
+                </h1>{' '}
               </div>
               <CartSummary {...this.props} />
             </div>
@@ -51,6 +55,11 @@ export class Shop extends Component {
             </div>
           </div>
         </div>
+        <footer className='text-center'>
+          <p>
+            Icons courtesy of <a href='https://flaticon.com'>Flaticon.com</a>
+          </p>
+        </footer>
       </ThemeProvider>
     )
   }

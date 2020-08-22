@@ -1,0 +1,158 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/08/2020 00:26
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-css-3:before { content: "\f100"; }
+.flaticon-gmail:before { content: "\f101"; }
+.flaticon-twitter-1:before { content: "\f102"; }
+.flaticon-linkedin:before { content: "\f103"; }
+.flaticon-twitter-2:before { content: "\f104"; }
+.flaticon-instagram-4:before { content: "\f105"; }
+.flaticon-instagram-5:before { content: "\f106"; }
+.flaticon-facebook-3:before { content: "\f107"; }
+.flaticon-instagram-6:before { content: "\f108"; }
+.flaticon-facebook-4:before { content: "\f109"; }
+.flaticon-instagram-7:before { content: "\f10a"; }
+.flaticon-facebook-5:before { content: "\f10b"; }
+.flaticon-instagram-8:before { content: "\f10c"; }
+.flaticon-facebook-6:before { content: "\f10d"; }
+.flaticon-facebook-7:before { content: "\f10e"; }
+.flaticon-twitter-4:before { content: "\f10f"; }
+.flaticon-facebook-9:before { content: "\f110"; }
+.flaticon-instagram-10:before { content: "\f111"; }
+.flaticon-facebook-10:before { content: "\f112"; }
+.flaticon-instagram-11:before { content: "\f113"; }
+.flaticon-twitter-7:before { content: "\f114"; }
+.flaticon-facebook-12:before { content: "\f115"; }
+.flaticon-placeholder:before { content: "\f116"; }
+.flaticon-instagram-12:before { content: "\f117"; }
+.flaticon-gmail-5:before { content: "\f118"; }
+.flaticon-google-forms:before { content: "\f119"; }
+.flaticon-linkedin-2:before { content: "\f11a"; }
+.flaticon-twitter-9:before { content: "\f11b"; }
+.flaticon-linkedin-4:before { content: "\f11c"; }
+.flaticon-instagram-14:before { content: "\f11d"; }
+.flaticon-linkedin-6:before { content: "\f11e"; }
+.flaticon-facebook-16:before { content: "\f11f"; }
+.flaticon-instagram-15:before { content: "\f120"; }
+.flaticon-instagram-16:before { content: "\f121"; }
+.flaticon-linkedin-8:before { content: "\f122"; }
+.flaticon-instagram-17:before { content: "\f123"; }
+.flaticon-linkedin-9:before { content: "\f124"; }
+.flaticon-twitter-10:before { content: "\f125"; }
+.flaticon-facebook-18:before { content: "\f126"; }
+.flaticon-instagram-19:before { content: "\f127"; }
+.flaticon-gmail-7:before { content: "\f128"; }
+.flaticon-linkedin-10:before { content: "\f129"; }
+.flaticon-whatsapp:before { content: "\f12a"; }
+.flaticon-instagram-20:before { content: "\f12b"; }
+.flaticon-facebook-21:before { content: "\f12c"; }
+.flaticon-linkedin-11:before { content: "\f12d"; }
+.flaticon-facebook-22:before { content: "\f12e"; }
+.flaticon-linkedin-12:before { content: "\f12f"; }
+.flaticon-twitter-13:before { content: "\f130"; }
+.flaticon-facebook-25:before { content: "\f131"; }
+.flaticon-linkedin-15:before { content: "\f132"; }
+.flaticon-facebook-28:before { content: "\f133"; }
+.flaticon-facebook-29:before { content: "\f134"; }
+.flaticon-linkedin-16:before { content: "\f135"; }
+.flaticon-github:before { content: "\f136"; }
+.flaticon-github-2:before { content: "\f137"; }
+.flaticon-github-1:before { content: "\f138"; }
+.flaticon-github-mascot-logo-variant:before { content: "\f139"; }
+.flaticon-github-character:before { content: "\f13a"; }
+    
+    $font-Flaticon-css-3: "\f100";
+    $font-Flaticon-gmail: "\f101";
+    $font-Flaticon-twitter-1: "\f102";
+    $font-Flaticon-linkedin: "\f103";
+    $font-Flaticon-twitter-2: "\f104";
+    $font-Flaticon-instagram-4: "\f105";
+    $font-Flaticon-instagram-5: "\f106";
+    $font-Flaticon-facebook-3: "\f107";
+    $font-Flaticon-instagram-6: "\f108";
+    $font-Flaticon-facebook-4: "\f109";
+    $font-Flaticon-instagram-7: "\f10a";
+    $font-Flaticon-facebook-5: "\f10b";
+    $font-Flaticon-instagram-8: "\f10c";
+    $font-Flaticon-facebook-6: "\f10d";
+    $font-Flaticon-facebook-7: "\f10e";
+    $font-Flaticon-twitter-4: "\f10f";
+    $font-Flaticon-facebook-9: "\f110";
+    $font-Flaticon-instagram-10: "\f111";
+    $font-Flaticon-facebook-10: "\f112";
+    $font-Flaticon-instagram-11: "\f113";
+    $font-Flaticon-twitter-7: "\f114";
+    $font-Flaticon-facebook-12: "\f115";
+    $font-Flaticon-placeholder: "\f116";
+    $font-Flaticon-instagram-12: "\f117";
+    $font-Flaticon-gmail-5: "\f118";
+    $font-Flaticon-google-forms: "\f119";
+    $font-Flaticon-linkedin-2: "\f11a";
+    $font-Flaticon-twitter-9: "\f11b";
+    $font-Flaticon-linkedin-4: "\f11c";
+    $font-Flaticon-instagram-14: "\f11d";
+    $font-Flaticon-linkedin-6: "\f11e";
+    $font-Flaticon-facebook-16: "\f11f";
+    $font-Flaticon-instagram-15: "\f120";
+    $font-Flaticon-instagram-16: "\f121";
+    $font-Flaticon-linkedin-8: "\f122";
+    $font-Flaticon-instagram-17: "\f123";
+    $font-Flaticon-linkedin-9: "\f124";
+    $font-Flaticon-twitter-10: "\f125";
+    $font-Flaticon-facebook-18: "\f126";
+    $font-Flaticon-instagram-19: "\f127";
+    $font-Flaticon-gmail-7: "\f128";
+    $font-Flaticon-linkedin-10: "\f129";
+    $font-Flaticon-whatsapp: "\f12a";
+    $font-Flaticon-instagram-20: "\f12b";
+    $font-Flaticon-facebook-21: "\f12c";
+    $font-Flaticon-linkedin-11: "\f12d";
+    $font-Flaticon-facebook-22: "\f12e";
+    $font-Flaticon-linkedin-12: "\f12f";
+    $font-Flaticon-twitter-13: "\f130";
+    $font-Flaticon-facebook-25: "\f131";
+    $font-Flaticon-linkedin-15: "\f132";
+    $font-Flaticon-facebook-28: "\f133";
+    $font-Flaticon-facebook-29: "\f134";
+    $font-Flaticon-linkedin-16: "\f135";
+    $font-Flaticon-github: "\f136";
+    $font-Flaticon-github-2: "\f137";
+    $font-Flaticon-github-1: "\f138";
+    $font-Flaticon-github-mascot-logo-variant: "\f139";
+    $font-Flaticon-github-character: "\f13a";
