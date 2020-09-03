@@ -22,12 +22,10 @@ export class CartSummary extends Component {
   render() {
     return (
       <div className='float-right'>
-        <small>
           {this.getSummary()}
           <Link className={this.getLinkClasses()} to='/shop/cart'>
             <i className='fa fa-shopping-cart'></i>
           </Link>
-        </small>
       </div>
     )
   }

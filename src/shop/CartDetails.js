@@ -13,25 +13,25 @@ export class CartDetails extends Component {
       <React.Fragment>
         <ThemeProvider theme={theme}>
           <div
-            className='col text-white'
+            className='col text-white font-weight-bold'
             style={{
               background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
             }}>
             <div className='navbar-brand'>
-              <h1
-                className='font-weight-bold'
-                style={{
-                  color: `${theme.palette.secondary.main}`,
-                  textShadow: '1px 1px 4px yellow',
-                  fontFamily: 'Bungee Inline'
-                }}>
-                SPORTS STORE
+            <h1
+                  className='font-weight-normal'
+                  style={{
+                    color: `${theme.palette.secondary.main}`,
+                    textShadow: '1px 1px 3px yellow',
+                    fontFamily: 'Bungee Inline'
+                  }}>
+                LUNA'S SPORTS STORE
               </h1>
             </div>
             <CartSummary {...this.props} />
           </div>
           <div className='m-3'>
-            <h2 className='text-white text-center'>Your Cart</h2>
+            <h2 className='text-white  text-center'>Your Cart</h2>
             <table className='table table-bordered table-striped text-white'>
               <thead>
                 <tr>

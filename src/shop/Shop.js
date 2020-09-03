@@ -26,14 +26,14 @@ export class Shop extends Component {
                 background: `linear-gradient(180deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.light} 100%)`
               }}>
               <div className='navbar-brand'>
-                <h1
-                  className='font-weight-bold'
+              <h1
+                  className='font-weight-normal'
                   style={{
                     color: `${theme.palette.secondary.main}`,
-                    textShadow: '1px 1px 4px yellow',
+                    textShadow: '1px 1px 2px yellow',
                     fontFamily: 'Bungee Inline'
                   }}>
-                  SPORTS STORE
+                  LUNA'S SPORTS STORE
                 </h1>{' '}
               </div>
               <CartSummary {...this.props} />
@@ -55,11 +55,7 @@ export class Shop extends Component {
             </div>
           </div>
         </div>
-        <footer className='text-center'>
-          <p>
-            Icons courtesy of <a href='https://flaticon.com'>Flaticon.com</a>
-          </p>
-        </footer>
+        
       </ThemeProvider>
     )
   }

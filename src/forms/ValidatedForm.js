@@ -64,11 +64,11 @@ export class ValidatedForm extends Component {
         {this.props.formModel.map((m) => this.renderElement(m))}
         <div className='text-center'>
           <button
-            className='btn btn-secondary m-1'
+            className='btn btn-secondary m-5'
             onClick={this.props.cancelCallback}>
             {this.props.cancelText || 'Cancel'}
           </button>
-          <button className='btn btn-primary m-1' onClick={this.handleSubmit}>
+          <button className='btn btn-primary m-5' onClick={this.handleSubmit}>
             {this.props.submitText || 'Submit'}
           </button>
         </div>
